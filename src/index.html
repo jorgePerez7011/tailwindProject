@@ -1,32 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
 
-  
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="/dist/output.css" rel="stylesheet">
-      <title>Box Model flex</title>
-  </head>
-  <body>
-      <div class="mx-auto  bg-green-600 max-w 3x1 container">
-  <header class="p-2 h-10 bg-red-300">
-      este es mi header 
-  </header>
-  <section class="flex bg bg-purple-400">
-  
-      <nav class="float-left w-1/4 bg-blue-400">
-          menu
-      </nav>
-      <article class="float-left w-3/4 bg-orange-400">
-          contenido de la secciòn 
-      </article>
-  </section>
-  
-  <footer class="clear-both">
-      pie de pagina
-  </footer>
-      </div>
-  </body>
-  </html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Box Model flex</title>
+</head>
+
+<body>
+    <div class="grid  grid-cols-4 mx-auto  bg-green-600 max-w 3x1 container">
+        <header class="col-span-4 p-2 h-10 bg-red-300">
+            este es mi header
+        </header>
+
+
+        <nav class="h-32 bg-blue-400">
+            menu
+        </nav>
+        <article class="col-span-3 bg-orange-400">
+            contenido de la secciòn
+        </article>
+
+
+        <footer class= "col-span-4 bg-red-500">
+            pie de pagina
+        </footer>
+    </div>
+</body>
+
+</html>
